@@ -60,8 +60,9 @@ def descargar_libro(url_libro, paginas, nombre_libro):
     pdf.save()
     print(f'Se ha creado el PDF {pdf_filename} con las imágenes.')
     #Modificación Erick Jesus Reyes Garcia
-    pdf_path = os.path.abspath(pdf_filename)
-    print(f'Ruta del PDF generado: {pdf_path}')
+    
+    pdf_path = os.path.abspath(pdf_filename) #obtiene la ruta del codigo
+    print(f'Ruta del PDF generado: {pdf_path}')#imprime la ruta del codigo
 
 
     # Eliminar la carpeta de imágenes
